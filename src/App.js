@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './styles/App.css';
-import CurrencyInput from './component/CurrencyInput'
+import CurrencyInput from './component/CurrencyInput';
+import { tryConvert } from './utils/utils.js';
+import { toCNY } from './utils/utils.js';
+import { toUSD } from './utils/utils.js';
 
 class App extends Component {
   constructor(props) {
@@ -38,22 +41,5 @@ class App extends Component {
     );
   }
 }
-
-const tryConvert = (currency, convert) => {
-  const input = parseFloat(currency);
-  if (Number.isNaN(input)) {
-    return '';
-  }
-  const output = convert(input);
-  return output.toString();
-};
-
-const toUSD = (CNY) => {
-  return Math.floor((CNY / 6) * 100) / 100;
-};
-
-const toCNY = (USD) => {
-  return Math.floor((USD * 6) * 100) / 100;
-};
 
 export default App;
