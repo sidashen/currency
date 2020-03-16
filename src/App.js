@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './styles/App.css';
 import CurrencyInput from './component/CurrencyInput'
 
 class App extends Component {
@@ -25,7 +25,7 @@ class App extends Component {
     const USD = scale === 'c' ? tryConvert(currency, toUSD) : currency;
     const CNY = scale === 'u' ? tryConvert(currency, toCNY) : currency;
     return (
-      <div>
+      <div className="currency-exchange">
         <CurrencyInput
           scale="u"
           currency={USD}

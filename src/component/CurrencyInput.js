@@ -19,7 +19,7 @@ class CurrencyInput extends Component {
     const scale = this.props.scale;
     return (
       <div>
-        <h2>{scaleNames[scale]}:</h2>
+        <h2>{scaleNames[scale]}</h2>
         <input value={currency}
           onChange={(e) => this.handleChange(e)} />
       </div>

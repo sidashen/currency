@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.currency-exchange {
+  position: relative;
+  margin: 280px auto;
+  width: 500px;
+  height: 300px;
+  background-color: #c5c5c5;
+}
