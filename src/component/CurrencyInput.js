@@ -11,6 +11,10 @@ class CurrencyInput extends Component {
   }
 
   render() {
+    const scaleNames = {
+      u: 'USD',
+      c: 'CNY'
+    };
     const currency = this.props.currency;
     const scale = this.props.scale;
     return (
