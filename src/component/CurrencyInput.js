@@ -7,7 +7,7 @@ class CurrencyInput extends Component {
   }
 
   handleChange(e) {
-    this.props.onTemperatureChange(e.target.value);
+    this.props.onCurrencyChange(e.target.value);
   }
 
   render() {
@@ -21,7 +21,7 @@ class CurrencyInput extends Component {
       <div>
         <h2>{scaleNames[scale]}:</h2>
         <input value={currency}
-          onChange={this.handleChange} />
+          onChange={(e) => this.handleChange(e)} />
       </div>
     );
   }
