@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../styles/CurrencyInput.css';
 
 class CurrencyInput extends Component {
   constructor(props) {
@@ -18,10 +19,11 @@ class CurrencyInput extends Component {
     const currency = this.props.currency;
     const scale = this.props.scale;
     return (
-      <div>
+      <div className="input">
         <h2>{scaleNames[scale]}</h2>
         <input value={currency}
-          onChange={(e) => this.handleChange(e)} />
+          onChange={(e) => this.handleChange(e)}
+          className="input-number" />
       </div>
     );
   }
