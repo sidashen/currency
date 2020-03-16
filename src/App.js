@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './styles/App.css';
 import CurrencyInput from './component/CurrencyInput';
-import { tryConvert } from './utils/utils.js';
-import { toCNY } from './utils/utils.js';
-import { toUSD } from './utils/utils.js';
+import { tryConvert, toCNY, toUSD } from './utils/utils.js';
 
 class App extends Component {
   constructor(props) {
